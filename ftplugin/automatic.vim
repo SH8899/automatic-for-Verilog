@@ -1520,7 +1520,7 @@ function ReadReg(lines, pars, reg_list, reg_addr, reg_wr, inputs, outputs, reg_r
                   if item[3] == "O"
                      if has_key(a:outputs, io_name)
                         if str2nr(a:outputs[io_name]) < io_msb
-                           call extend(a:outputs, {io_name : io_msb}, "force"}
+                           call extend(a:outputs, {io_name : io_msb}, "force")
                         endif
                      else
                         call extend(a:outputs, {io_name : io_msb}, "force")
